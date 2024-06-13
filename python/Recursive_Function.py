@@ -1,11 +1,15 @@
-def sum_list(numbers):
-    # Base case: if the list is empty, return 0
-    if not numbers:
-        return 0
-    else:
-        # Recursive case: return the first element plus the sum of the rest of the list
-        return numbers[0] + sum_list(numbers[1:])
 
-# Example usage
-numbers = [5, 2, 3, 4, 5]
-print(sum_list(numbers))  # Output: 15
+# Calculate the Sum of a List Using Recursion
+# Problem: Write a function to calculate the sum of a list of integers using 
+
+
+def sum_list(numberList):
+    if not numberList:
+     return 0
+    else:
+           return numberList[0]+sum_list(numberList[1:])
+
+
+numbers=[1,2,3,4,5]
+print(sum_list(numbers))
+
