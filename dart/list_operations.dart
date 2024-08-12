@@ -76,3 +76,26 @@ void main() {
   var iterableList = List<int>.from([1, 2, 3, 4, 5]);
   print('List from iterable: $iterableList');
 }
+
+//add element
+List<int> addElement(List<int> list, int element) {
+  list.add(element);
+  return list;
+}
+
+//remove element
+
+List<int> removeElement(List<int> list, int element) {
+  list.remove(element);
+  return list;
+}
+// sort List:'
+
+List<int> sortList(List<int> list) {
+  List<int> filteredList = list.where((element) => element > 30).toList();
+
+  filteredList.sort();
+  list.sort();
+  return list;
+}
+//
