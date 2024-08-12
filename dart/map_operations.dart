@@ -74,3 +74,7 @@ void main() {
   var entries = newStudentScores.entries.toList();
   print('Entries as list: $entries');
 }
+
+bool checkValue(Map<String, int> map, String key) {
+  return map.containsKey(key);
+}
