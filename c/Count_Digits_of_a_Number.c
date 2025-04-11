@@ -19,3 +19,6 @@ int countDigits(int num)
     }
     return count;
 }
+
+// Time Complexity : O(log₁₀(n))
+// Space Complexity : O(1)
